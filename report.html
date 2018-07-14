@@ -13582,12 +13582,12 @@ Once you have performed this implementation, the dataset will be stored in the v
 <p><strong>Answer:</strong></p>
 <p>The total variance explained by the first <strong>two</strong> principal components is: <strong>70.68%</strong> (44.3% + 26.38%)</p>
 <p>The total variance explained by the first <strong>four</strong> principal components is: <strong>93.11%</strong> (44.3% + 26.38% + 12.31% + 10.12%)</p>
-<p>Assuming that a good representation is show by feature bigger in module than 0.4</p>
+<p>Assuming that a good representation is show by feature more than 0.3 (absolute value)</p>
 <ul>
-<li>The <em>first PC</em> represents well the Detergent_Paper and we can also get enought information from Grocery and Milk. The other components are poorly represented.</li>
-<li>The <em>second PC</em> represents well Fresh, Frozen and Delicatessen.</li>
-<li>The <em>third PC</em> represents well Fresh, Frozen and Delicatessen.</li>
-<li>The <em>fourth PC</em> represents well Frozen and Delicatessen.</li>
+<li>The <em>first PC</em> is inversely correlated with Detergent_Paper, Grocery and Milk. It means to increase the first PC, we need to decrease the values of these features. This suggests that these three criteria vary together. If one dicreases, then the remaining ones tend to dicrease as well.</li>
+<li>The <em>second PC</em> is inversely correlated with Fresh, Frozen and Delicatessen. To make the second PC grows, we need to decrease these other features.</li>
+<li>The <em>third PC</em>  is directly proportional with Frozen and Delicatessen and the inversely with Fresh.</li>
+<li>The <em>fourth PC</em> is directly correlated with Frozen and inversely with Delicatessen.</li>
 </ul>
 
 </div>
